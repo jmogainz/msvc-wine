@@ -24,13 +24,25 @@ RUN PYTHONUNBUFFERED=1 ./vsdownload.py --accept-license --dest /opt/msvc && \
 COPY msvcenv-native.sh /opt/msvc
 
 RUN apt-get update && \
-    apt-get install cmake -y && \
-    apt-get install g++ -y && \
-    apt-get install winbind -y
+    apt-get install -y g++ wget cmake && \
+    apt-get install -y winbind
+
+# Install CMake 3.23
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-Linux-x86_64.sh && \
+    chmod +x cmake-3.23.0-Linux-x86_64.sh && \
+    ./cmake-3.23.0-Linux-x86_64.sh --skip-license --prefix=/usr/local
+
+RUN wget https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.gz && \
+    tar -xvf binutils-2.42.tar.gz && \
+    cd binutils-2.42 && \
+    ./configure && \
+    make && \
+    make install
 
 # Modify .bashrc
-RUN echo "export PATH=/opt/msvc/bin/x64:$PATH" >> ~/.bashrc && \
-    echo "alias cmake-cc='CC=cl CXX=cl cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Windows'" >> ~/.bashrc
+RUN echo "export PATH=/usr/local/bin:\$PATH" >> ~/.bashrc && \
+    echo "export PATH=/opt/msvc/bin/x64:\$PATH" >> ~/.bashrc && \
+    echo "alias msvc-cmake='CC=cl CXX=cl cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Windows'" >> ~/.bashrc
 
 # Later stages which actually uses MSVC can ideally start a persistent
 # wine server like this:
