@@ -23,6 +23,15 @@ RUN PYTHONUNBUFFERED=1 ./vsdownload.py --accept-license --dest /opt/msvc && \
 
 COPY msvcenv-native.sh /opt/msvc
 
+RUN apt-get update && \
+    apt-get install cmake -y && \
+    apt-get install g++ -y && \
+    apt-get install winbind -y
+
+# Modify .bashrc
+RUN echo "export PATH=/opt/msvc/bin/x64:$PATH" >> ~/.bashrc && \
+    echo "alias cmake-cc='CC=cl CXX=cl cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Windows'" >> ~/.bashrc
+
 # Later stages which actually uses MSVC can ideally start a persistent
 # wine server like this:
 #RUN wineserver -p && \
