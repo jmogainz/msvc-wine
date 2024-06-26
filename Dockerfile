@@ -31,7 +31,8 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get install -y vim && \
     apt-get install -y sudo && \
-    apt-get install -y curl
+    apt-get install -y curl && \
+    apt-get install -y winetricks
 
 # Install CMake 3.23
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-Linux-x86_64.sh && \
@@ -52,11 +53,17 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 # Modify .bashrc
 RUN echo "export PATH=/usr/local/bin:\$PATH" >> ~/.zshrc && \
     echo "export PATH=/opt/msvc/bin/x64:\$PATH" >> ~/.zshrc && \
-    echo "alias msvc-cmake='CC=cl CXX=cl cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER_WORKS=1 -DCMAKE_CXX_COMPILER_WORKS=1 -DCMAKE_INSTALL_PREFIX=./../install'" >> ~/.zshrc
+    echo "alias msvc-cmake='CC=cl CXX=cl cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER_WORKS=1 -DCMAKE_CXX_COMPILER_WORKS=1 -DCMAKE_INSTALL_PREFIX=./../install -DCMAKE_OBJECT_PATH_MAX=250'" >> ~/.zshrc
 
 # Configure Supervisor to keep the container running
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Set the display environment variable
+ENV DISPLAY=host.docker.internal:0
+
+# Install wine32-development
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y wine32-development
 
 # Default command to run Supervisor
 CMD ["/usr/bin/supervisord"]

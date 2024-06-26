@@ -1,0 +1,138 @@
+2024-06-26 17:45:27,401 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-26 17:45:27,403 INFO supervisord started with pid 1
+2024-06-26 17:45:28,405 INFO spawned: 'keep_running' with pid 8
+2024-06-26 17:45:28,406 INFO spawned: 'zsh' with pid 9
+2024-06-26 17:45:29,408 INFO success: keep_running entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:45:29,408 INFO success: zsh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:46:01,446 INFO reaped unknown pid 146
+2024-06-26 17:46:01,446 INFO reaped unknown pid 148
+2024-06-26 17:46:03,449 INFO reaped unknown pid 153
+2024-06-26 17:46:03,449 INFO reaped unknown pid 157
+2024-06-26 17:46:03,449 INFO reaped unknown pid 169
+2024-06-26 17:46:05,451 INFO reaped unknown pid 144
+2024-06-26 17:46:05,451 INFO reaped unknown pid 150
+2024-06-26 17:46:05,451 INFO reaped unknown pid 162
+2024-06-26 17:46:06,453 INFO reaped unknown pid 940
+2024-06-26 17:46:06,453 INFO reaped unknown pid 942
+2024-06-26 17:46:07,454 INFO reaped unknown pid 947
+2024-06-26 17:46:07,454 INFO reaped unknown pid 949
+2024-06-26 17:46:07,454 INFO reaped unknown pid 956
+2024-06-26 17:46:07,454 INFO reaped unknown pid 965
+2024-06-26 17:46:08,456 INFO reaped unknown pid 938
+2024-06-26 17:46:08,456 INFO reaped unknown pid 944
+2024-06-26 17:47:44,571 WARN received SIGTERM indicating exit request
+2024-06-26 17:47:44,571 INFO waiting for keep_running, zsh to die
+2024-06-26 17:47:44,571 INFO stopped: zsh (terminated by SIGTERM)
+2024-06-26 17:47:45,573 INFO stopped: keep_running (terminated by SIGTERM)
+2024-06-26 17:51:20,229 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-26 17:51:20,230 INFO supervisord started with pid 1
+2024-06-26 17:51:21,232 INFO spawned: 'keep_running' with pid 7
+2024-06-26 17:51:21,233 INFO spawned: 'zsh' with pid 8
+2024-06-26 17:51:22,235 INFO success: keep_running entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:51:22,235 INFO success: zsh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:51:46,261 INFO reaped unknown pid 179
+2024-06-26 17:51:46,261 INFO reaped unknown pid 181
+2024-06-26 17:51:48,264 INFO reaped unknown pid 177
+2024-06-26 17:51:48,264 INFO reaped unknown pid 183
+2024-06-26 17:51:48,264 INFO reaped unknown pid 186
+2024-06-26 17:51:48,264 INFO reaped unknown pid 188
+2024-06-26 17:51:48,264 INFO reaped unknown pid 195
+2024-06-26 17:51:48,264 INFO reaped unknown pid 204
+2024-06-26 17:51:50,265 INFO reaped unknown pid 973
+2024-06-26 17:51:50,266 INFO reaped unknown pid 975
+2024-06-26 17:51:52,267 INFO reaped unknown pid 980
+2024-06-26 17:51:52,267 INFO reaped unknown pid 983
+2024-06-26 17:51:52,267 INFO reaped unknown pid 998
+2024-06-26 17:51:54,270 INFO reaped unknown pid 971
+2024-06-26 17:51:54,270 INFO reaped unknown pid 977
+2024-06-26 17:51:54,270 INFO reaped unknown pid 989
+2024-06-26 17:52:22,301 WARN received SIGTERM indicating exit request
+2024-06-26 17:52:22,301 INFO waiting for keep_running, zsh to die
+2024-06-26 17:52:22,301 INFO stopped: zsh (terminated by SIGTERM)
+2024-06-26 17:52:23,303 INFO stopped: keep_running (terminated by SIGTERM)
+2024-06-26 17:53:15,193 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-26 17:53:15,194 INFO supervisord started with pid 1
+2024-06-26 17:53:16,196 INFO spawned: 'keep_running' with pid 8
+2024-06-26 17:53:16,197 INFO spawned: 'zsh' with pid 9
+2024-06-26 17:53:17,198 INFO success: keep_running entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:53:17,198 INFO success: zsh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:53:55,241 INFO reaped unknown pid 158
+2024-06-26 17:53:55,241 INFO reaped unknown pid 160
+2024-06-26 17:53:57,243 INFO reaped unknown pid 156
+2024-06-26 17:53:57,243 INFO reaped unknown pid 162
+2024-06-26 17:53:57,243 INFO reaped unknown pid 165
+2024-06-26 17:53:57,243 INFO reaped unknown pid 167
+2024-06-26 17:53:57,243 INFO reaped unknown pid 174
+2024-06-26 17:53:57,243 INFO reaped unknown pid 183
+2024-06-26 17:53:59,245 INFO reaped unknown pid 951
+2024-06-26 17:53:59,245 INFO reaped unknown pid 953
+2024-06-26 17:54:01,248 INFO reaped unknown pid 949
+2024-06-26 17:54:01,249 INFO reaped unknown pid 955
+2024-06-26 17:54:01,249 INFO reaped unknown pid 958
+2024-06-26 17:54:01,249 INFO reaped unknown pid 964
+2024-06-26 17:54:01,249 INFO reaped unknown pid 967
+2024-06-26 17:54:01,249 INFO reaped unknown pid 976
+2024-06-26 17:56:43,881 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-26 17:56:43,882 INFO supervisord started with pid 1
+2024-06-26 17:56:44,884 INFO spawned: 'keep_running' with pid 8
+2024-06-26 17:56:44,885 INFO spawned: 'zsh' with pid 9
+2024-06-26 17:56:45,886 INFO success: keep_running entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:56:45,886 INFO success: zsh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-26 17:58:15,990 INFO reaped unknown pid 146
+2024-06-26 17:58:15,990 INFO reaped unknown pid 148
+2024-06-26 17:58:17,993 INFO reaped unknown pid 144
+2024-06-26 17:58:17,993 INFO reaped unknown pid 150
+2024-06-26 17:58:17,993 INFO reaped unknown pid 153
+2024-06-26 17:58:17,993 INFO reaped unknown pid 155
+2024-06-26 17:58:17,993 INFO reaped unknown pid 162
+2024-06-26 17:58:17,993 INFO reaped unknown pid 170
+2024-06-26 17:58:19,994 INFO reaped unknown pid 938
+2024-06-26 17:58:19,994 INFO reaped unknown pid 940
+2024-06-26 17:58:28,004 INFO reaped unknown pid 991
+2024-06-26 17:58:29,005 INFO reaped unknown pid 945
+2024-06-26 17:58:29,006 INFO reaped unknown pid 947
+2024-06-26 17:58:29,006 INFO reaped unknown pid 963
+2024-06-26 17:58:31,008 INFO reaped unknown pid 936
+2024-06-26 17:58:31,008 INFO reaped unknown pid 942
+2024-06-26 17:58:31,008 INFO reaped unknown pid 954
+2024-06-26 17:58:35,012 INFO reaped unknown pid 1070
+2024-06-26 17:58:35,012 INFO reaped unknown pid 1072
+2024-06-26 17:58:40,018 INFO reaped unknown pid 1926
+2024-06-26 17:58:41,019 INFO reaped unknown pid 1068
+2024-06-26 17:58:41,020 INFO reaped unknown pid 1074
+2024-06-26 17:58:41,020 INFO reaped unknown pid 1077
+2024-06-26 17:58:41,020 INFO reaped unknown pid 1079
+2024-06-26 17:58:41,020 INFO reaped unknown pid 1086
+2024-06-26 17:58:41,020 INFO reaped unknown pid 1096
+2024-06-26 17:58:47,026 INFO reaped unknown pid 2006
+2024-06-26 17:58:47,027 INFO reaped unknown pid 2008
+2024-06-26 17:58:48,027 INFO reaped unknown pid 2013
+2024-06-26 17:58:48,027 INFO reaped unknown pid 2015
+2024-06-26 17:58:48,027 INFO reaped unknown pid 2030
+2024-06-26 17:58:50,029 INFO reaped unknown pid 2004
+2024-06-26 17:58:50,029 INFO reaped unknown pid 2010
+2024-06-26 17:58:50,029 INFO reaped unknown pid 2022
+2024-06-26 17:59:42,087 INFO reaped unknown pid 2750
+2024-06-26 17:59:42,088 INFO reaped unknown pid 2752
+2024-06-26 17:59:43,089 INFO reaped unknown pid 2757
+2024-06-26 17:59:43,089 INFO reaped unknown pid 2759
+2024-06-26 17:59:43,089 INFO reaped unknown pid 2776
+2024-06-26 17:59:45,092 INFO reaped unknown pid 2748
+2024-06-26 17:59:45,092 INFO reaped unknown pid 2754
+2024-06-26 17:59:45,092 INFO reaped unknown pid 2766
+2024-06-26 18:00:56,175 INFO reaped unknown pid 3490
+2024-06-26 18:00:56,175 INFO reaped unknown pid 3492
+2024-06-26 18:00:57,176 INFO reaped unknown pid 3497
+2024-06-26 18:00:57,176 INFO reaped unknown pid 3499
+2024-06-26 18:00:57,176 INFO reaped unknown pid 3515
+2024-06-26 18:00:59,178 INFO reaped unknown pid 3488
+2024-06-26 18:00:59,178 INFO reaped unknown pid 3494
+2024-06-26 18:00:59,178 INFO reaped unknown pid 3506
+2024-06-26 18:02:00,251 WARN received SIGTERM indicating exit request
+2024-06-26 18:02:00,251 INFO waiting for keep_running, zsh to die
+2024-06-26 18:02:00,252 INFO stopped: zsh (terminated by SIGTERM)
+2024-06-26 18:02:00,793 WARN received SIGTERM indicating exit request
+2024-06-26 18:02:00,794 INFO waiting for keep_running, zsh to die
+2024-06-26 18:02:00,794 INFO stopped: zsh (terminated by SIGTERM)
+2024-06-26 18:02:01,253 INFO stopped: keep_running (terminated by SIGTERM)
+2024-06-26 18:02:01,796 INFO stopped: keep_running (terminated by SIGTERM)
